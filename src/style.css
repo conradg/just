@@ -1,0 +1,38 @@
+.key {
+    background-color: white;
+    width: 30px;
+    height: 90px;
+    display: inline-block;
+    margin: -3px;
+}
+
+.key.white {
+    border: 1px solid black;
+}
+
+.key.black {
+    display: inline-block;
+    position: absolute;
+    width:0
+}
+
+div {
+    display: block;
+}
+
+.black::after {
+    width: 20px;
+    height: 61px;
+    content: "";
+    position: absolute;
+    left: -11px;
+    background-color: black;
+}
+
+.black:hover:after {
+    background-color: blue;
+}
+
+.white:hover {
+    background-color: blue;
+}
